@@ -18,7 +18,7 @@ TemperatureSensor::TemperatureSensor() : readIndex(0), total(0), average(0)
     std::fill(std::begin(readings), std::end(readings), 0); // Initialize readings array
 }
 
-void MoistureSensor::init(int gpioPin)
+void TemperatureSensor::init(int gpioPin)
 {
     gpio = gpioPin;
 }
